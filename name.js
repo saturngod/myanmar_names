@@ -36,8 +36,6 @@ function segmentWithSeparator(text, separator) {
 }
 
 //-------//
-
-
 var fs = require('fs');
 var content = fs.readFileSync("word.tsv", "utf8")
 var map = {};
@@ -50,7 +48,7 @@ const json = content.split('\n')
         return { eng, mya };
     });
 
-var input = "သေနာကောင်သေးသေးလေး"
+var input = "မသိလိုမဖြစ်ဘူးလေ ဖြီးလေး"
 var data = segmentWithSeparator(input," ")
 console.log(data);
 data = data.substr(1)
