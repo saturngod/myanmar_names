@@ -11,4 +11,5 @@ The code is so dirty and just try to prove , what is the eaiest way for myanmar 
 # Result
 
 input: အောင်ကောင်းစံ , output: aung kaung san
+
 input: lin naing aung , output: လင်း နိုင် အောင်
