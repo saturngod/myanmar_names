@@ -30,7 +30,9 @@ function segmentWithSeparator(text, separator) {
 	if (separator === undefined) {
 		separator = "|";
 	}
-	return text.replace(BREAK_PATTERN, separator + "$1");
+	var result = text.replace(BREAK_PATTERN, separator + "$1");
+    result = result.replace("\u{1039}","\u{103A}");
+    return result;
 }
 
 //-------//
@@ -48,8 +50,9 @@ const json = content.split('\n')
         return { eng, mya };
     });
 
-var input = "အောင်ကောင်းစံ"
+var input = "သန္တာလှိုင်"
 var data = segmentWithSeparator(input," ")
+console.log(data);
 data = data.substr(1)
 var res = "";
 data.split(" ").map(seg => {
