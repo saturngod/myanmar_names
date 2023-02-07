@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Name Converter</title>
+        <script src="syllable.js"></script>
+        <script src="mmen.js"></script>
+        <script>
+            function changeToEn() {
+                const result = mm2en(document.getElementById("mmin").value);
+                document.getElementById("eng").innerHTML =  result;
+            }
+            function changeToMy() {
+                const result = en2mm(document.getElementById("enin").value);
+                document.getElementById("mya").innerHTML =  result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Enter Myanmar Name</h1>
+        <input id="mmin" type="text" placeholder="မောင်မောင်">
+        <input type="button" value="Convert" onclick="changeToEn();">
+        <div id="eng"></div>
+
+        <h1>Enter English Name</h1>
+        <input id="enin" type="text" placeholder="mg mg" >
+        <input type="button" value="Convert" onclick="changeToMy();">
+        <div id="mya"></div>
+    </body>
+</html>
