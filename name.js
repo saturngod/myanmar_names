@@ -50,7 +50,7 @@ const json = content.split('\n')
         return { eng, mya };
     });
 
-var input = "သန္တာလှိုင်"
+var input = "သေနာကောင်သေးသေးလေး"
 var data = segmentWithSeparator(input," ")
 console.log(data);
 data = data.substr(1)
