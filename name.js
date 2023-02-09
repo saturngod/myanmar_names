@@ -48,6 +48,10 @@ const json = content.split('\n')
         return { eng, mya };
     });
 
+console.log(JSON.stringify(map));
+console.log("\n\n");
+console.log(JSON.stringify(enmap));
+
 var input = "မိုးအောင်"
 var data = segmentWithSeparator(input," ")
 console.log(data);
